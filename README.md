@@ -16,14 +16,17 @@ $ npm install bbUIgen
 
 ## Usage
 
-* Customize the config file for your app by editing myApp.js
-* Run bbUIgen (from checked out source): ``` node bbUIgen``` (or from installed node package): ```bbUIgen```
+* Customize the config file for your app by editing myApp.js or copying to another file
+* Run bbUIgen with default myApp.js config: (from checked out source): ``` node bbUIgen``` (or from installed node package): ```bbUIgen```
+* OR Run bbUIgen with your own config e.g.: 
+
+```node bbUIgen "./anotherApp.js"```
 
 The resulting project files will be generated in output/{{your app name}}
 
 ## TODO
 
-* Support specifying config files and output location on the command line
+* Support specifying output location on the command line
 * Support the full set of bbUI [data-attributes](https://github.com/blackberry/bbUI.js/wiki/Data-Attribute-Reference)
 
 ## License

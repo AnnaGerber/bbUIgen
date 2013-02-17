@@ -1,11 +1,21 @@
 var fgen = require("fgen");
-
+var appIdx = -1;
+var configFile = "./myApp.js";
+process.argv.forEach(function (val, index, array) {
+        if (appIdx != -1 && index == (appIdx + 1)){
+	   // arg immediately after app name is input file
+	   configFile = val;
+	}
+	if(val.indexOf("bbUIgen") != -1) {
+	    appIdx = index;
+	}
+});
 fgen.createGenerator("bbUIgen", function(err, generator) {
 	if (err) {
 	    console.log(err);
 	    return;
 	}
-        var globalContext = require("./myApp.js");
+        var globalContext = require(configFile);
         generator.context = globalContext;
         generator.generateAll("./output/" + generator.context.appName,
            function(k) {return k!="__appScreens__.html";},
