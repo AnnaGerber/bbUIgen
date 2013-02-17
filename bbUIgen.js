@@ -5,14 +5,8 @@ fgen.createGenerator("bbUIgen", function(err, generator) {
 	    console.log(err);
 	    return;
 	}
-	// change these values here for your app
-	generator.context = {
-	    appName: "myApp",
-	    version: "1.0.0.0",
-            author: "Anonymous",
-            authorURL: "http://www.example.com"
-	};
-	// end of values to change
+
+	generator.context = require("./myApp.js");
 	generator.generateAll("./output/" + generator.context.appName, function(err) {
 		if (!err) {
 		    console.log("Successful generation.");
