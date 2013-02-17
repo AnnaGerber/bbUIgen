@@ -1,7 +1,7 @@
 {
   "name": "bbUIgen",
   "version": "0.1.0",
-  "description": "A bbUI generator",
+  "description": "A BlackBerry 10 app generator that uses bbUI",
   "preferGlobal": false,
   "bin": {
     "bbUIgen": "./bbUIgen.js"
