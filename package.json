@@ -1,0 +1,38 @@
+{
+  "name": "bbUIgen",
+  "version": "0.1.0",
+  "description": "A bbUI generator",
+  "preferGlobal": false,
+  "bin": {
+    "bbUIgen": "./generatebbUI.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AnnaGerber/bbUIgen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AnnaGerber/bbUIgen/issues",
+    "email": "anna.m.gerber@gmail.com"
+  },
+  "keywords": [
+    "generate",
+    "generator",
+    "template",
+    "engine",
+    "project",
+    "bbUI"
+  ],
+  "author": {
+    "name": "Anna Gerber",
+    "email": "anna.m.gerber@gmail.com"
+  },
+  "engines": {
+    "node": ">=0.6"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "fgen": "~0.3.0",
+    "nomnom": "https://github.com/sethyuan/nomnom/archive/master.tar.gz"
+  }
+}
