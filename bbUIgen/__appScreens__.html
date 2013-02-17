@@ -1,0 +1,16 @@
+<div data-bb-type="screen">
+<!-- TODO: Auto-generated stub - insert your content here -->
+<!-- Refer to the bbUI data-attribute reference for information about these attributes: https://github.com/blackberry/bbUI.js/wiki/Data-Attribute-Reference --> 
+{{#list}}
+<div data-bb-type="{{listtype}}">
+  {{#items}}
+     <div id="{{id}}" data-bb-type="item" data-bb-img="./icons/icon_placeholder.png" data-bb-title="{{title}}"></div>
+  {{/items}}
+</div>
+{{/list}}
+<div data-bb-type="action-bar" data-bb-back-caption="Back">
+{{#actionbar}}
+   <div id="{{id}}" data-bb-type="action" data-bb-style="button" data-bb-img="./icons/icon_placeholder.png">{{name}}</div>
+{{/actionbar}}
+</div>
+</div>
