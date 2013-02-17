@@ -4,7 +4,7 @@
   "description": "A bbUI generator",
   "preferGlobal": false,
   "bin": {
-    "bbUIgen": "./generatebbUI.js"
+    "bbUIgen": "./bbUIgen.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
     "template",
     "engine",
     "project",
+    "BlackBerry",
     "bbUI"
   ],
   "author": {
@@ -32,7 +33,6 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
-    "fgen": "~0.3.0",
-    "nomnom": "https://github.com/sethyuan/nomnom/archive/master.tar.gz"
+    "fgen": "~0.3.0"
   }
 }
