@@ -13,7 +13,7 @@ fgen.createGenerator("bbUIgen", function(err, generator) {
             authorURL: "http://www.example.com"
 	};
 	// end of values to change
-	generator.generateAll("./output", function(err) {
+	generator.generateAll("./output/" + generator.context.appName, function(err) {
 		if (!err) {
 		    console.log("Successful generation.");
 		}
