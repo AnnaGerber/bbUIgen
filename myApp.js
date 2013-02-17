@@ -21,9 +21,12 @@ exports.appScreens=[
  },
  {
      "id": "createEvent",
-     "actionbar": [
-       {"id":"add", "name":"Add"},
-       {"id":"help","name":"Help"}
-     ]
+     "actionbar": {
+         "backcaption":"Back",
+	 "items":[
+           {"id":"add", "name":"Add"},
+           {"id":"help","name":"Help"}
+	  ]
+     }
  }
 ];
