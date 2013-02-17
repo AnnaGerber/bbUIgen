@@ -3,7 +3,7 @@ exports.appName = "myApp";
 exports.version="1.0.0.0";
 exports.author="Anonymous";
 exports.authorURL="http://www.example.com";
-
+exports.year="2013";
 // optional
 exports.description="My Sample BB10 app";
 exports.features=[
